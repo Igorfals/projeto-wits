@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto'
+}
+
+.section__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+}
+
+header {
+    height: 64px;
+    padding: 0 40px;
+}
+
+.header__container {
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+}
+
+.header-nav {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    color: #EF3DFF
+}
+
+
+.header-nav li {
+    display: inline-block;
+    margin: 20PX;
+}
+
+.social-media {
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.main-section {
+    height: 550px;
+}
+
+.main-section__container {
+    flex-direction: column;
+}
+
+.main-section__title {
+    margin-top: 200px;
+}
+
+.main-section__title h1 {
+    font-size: 82px;
+    max-width: 500px;
+    line-height: 1;
+}
+
+.main-section__title h2 {
+    font-size: 40px;
+    max-width: 500px;
+    color: #3D5BFF;
+}
+
+.main-section__buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 43px;
+}
+
+.main-section__buttons button {
+    height: 35px;
+    width: 186px;
+    border-radius: 4px;
+    border: 1px solid #3D5BFF;
+}
+
+.main-section__buttons .button_primary {
+    background-color: #3D5BFF;
+    color: white;
+}
+
+.main-section__buttons .button_second {
+    background-color: #181818;
+    color: #3D5BFF;
+}
+
+.marketing__section__container {
+    display: flex;
+    width: 60%;
+}
+
+.marketing__section__title {
+    width: auto;
+}
+
+.marketing-digital {
+    border-radius: 1em;
+    background: #181818;
+    padding: 2em;
+    width: 17em;
+    height: 15em;
+}
+
+.marketing-digital  h2{
+  background-image: linear-gradient(to bottom, #FFB868, #F99B2F);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.marketing-digital p {
+    text-align: justify;
+    font-size: small;
+}
+
+
+.main-space {
+    background-image: url("./img/starfield-deep-space-many-light-years-far-from-earth\ 2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main-space-effect {
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-image: url('./img/bg\ 1.png');
+    height: 100%;
+}
+
+.marketing__section__container__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+    padding-bottom: 2em;
+}
+
+.merketing__section__container__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+    padding-top: 2em;
+    padding-left: 2em;
+}
+
+.solution {
+    background-color: #3D5BFF;
+    width: 121px;
+    height: 8px;
+    margin-top: 11em;
+}
+
+.solution__title {
+    font-size: 64px;
+}
+
+.solution__subtitle {
+    font-size: 64px;
+    color: #EF3DFF;
+}
+
+.marketing__section__title {
+    margin-left: 7.3em;
+}
+
+.dark {
+    background: #141414; height: 400px;
+}
+
+
+.sobrenos__section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8em;
+}
+
+.sobrenos__logo {
+    width: 50%;
+    
+
+}
+
+.sobrenos__logo img {
+    background-color: #181818;
+    padding: 85px 70px 104px 70px;
+    border-radius: 0.8em;
+}
+
+.sobrenos__info {
+    width: 50%;
+}
+
+.sobrenos__info span {
+    color: #3D5BFF;
+}
+
+.sobrenos__info h1 {
+    font-size: 64px;
+}
+
+.sobrenos__info p {
+    text-align: justify;
+}

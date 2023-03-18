@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,12 +15,19 @@ body {
     max-width: 1250px;
     margin: 0 auto;
     display: flex;
+    position: relative;
 }
 
 header {
     height: 64px;
     padding: 0 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+    background-color: #141414;
 }
+
 
 .header__container {
     align-items: center;
@@ -36,7 +43,7 @@ header {
     justify-content: flex-end;
 }
 
-.header-nav a{
+.header-nav a {
     color: white;
     text-decoration: none;
 }
@@ -99,11 +106,13 @@ header {
 .main-section__buttons .button_primary {
     background-color: #3D5BFF;
     color: white;
+    cursor: pointer;
 }
 
 .main-section__buttons .button_second {
     background-color: #181818;
     color: #3D5BFF;
+    cursor: pointer;
 }
 
 .marketing__section__container {
@@ -123,14 +132,14 @@ header {
     height: 15em;
 }
 
-.marketing-digital  h2{
-  background-image: linear-gradient(to bottom, #FFB868, #F99B2F);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: black;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+.marketing-digital h2 {
+    background-image: linear-gradient(to bottom, #FFB868, #F99B2F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .marketing-digital p {
@@ -187,11 +196,6 @@ header {
     margin-left: 7.3em;
 }
 
-.dark {
-    background: #141414; height: 400px;
-}
-
-
 .sobrenos__section {
     display: flex;
     flex-direction: row;
@@ -200,8 +204,6 @@ header {
 
 .sobrenos__logo {
     width: 50%;
-    
-
 }
 
 .sobrenos__logo img {
@@ -224,4 +226,344 @@ header {
 
 .sobrenos__info p {
     text-align: justify;
+}
+
+
+.clientbar {
+    background-color: #3D5BFF;
+    width: 87px;
+    height: 8px;
+    margin-top: 6em;
+}
+
+.client__text {
+    width: 20%;
+}
+
+.client__text h2 {
+    font-size: 60px;
+}
+
+.client__text h3 {
+    font-size: 30px;
+    color: #3D5BFF;
+}
+
+.client__logo {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-left: 7em;
+    width: 210px;
+    height: 235px;
+    margin-top: 6em;
+}
+
+.publication__section {
+    width: 100%;
+    text-align: center;
+    margin-top: 5em;
+    position: relative;
+}
+
+.publication__tex__principal {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.publication__text {
+    width: 50%;
+}
+
+.publication__text h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.publication__subtext {
+    width: 43%;
+}
+
+.publication__subtext h3 {
+    font-size: 20px;
+    color: #3D5BFF;
+}
+
+.publication {
+    flex-direction: column;
+    position: relative;
+}
+
+.publication__logo {
+    height: 900px;
+    margin-top: 50px;
+}
+
+.img__ponta__esquerda {
+    position: absolute;
+    width: 239px;
+    height: 315px;
+    margin-top: 160px;
+    left: 37px;
+    background: url('./img/Publication-img01.png');
+}
+
+.img__secundaria__esquerda {
+    position: absolute;
+    width: 290px;
+    height: 383px;
+    left: 231px;
+    margin-top: 125px;
+    z-index: 1;
+    background: url('./img/Publication-img02.png');
+}
+
+.img__principal {
+    position: absolute;
+    width: 339px;
+    height: 700px;
+    left: 450px;
+    z-index: 2;
+    background: url('./img/Publication-img03.png');
+}
+
+.img__secundaria__direita {
+    position: absolute;
+    width: 294px;
+    height: 383px;
+    left: 715px;
+    margin-top: 125px;
+    z-index: 1;
+    background: url('./img/Publication-img04.png');
+}
+
+.img__ponta__direita {
+    position: absolute;
+    width: 239px;
+    height: 315px;
+    left: 949px;
+    margin-top: 160px;
+    background: url('./img/Publication-img05.png');
+}
+
+.service__main {
+    display: flex;
+    flex-direction: row;
+}
+
+.service__text {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px 0 15px;
+}
+
+.title__service h2 {
+    width: 90%;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.description__service p {
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.service__btn {
+    margin-top: 15px;
+    float: left;
+}
+
+.service_button {
+    width: 100%;
+}
+
+.service__btn button {
+    width: 186px;
+    height: 36px;
+    background: #3D5BFF;
+    color: white;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.service__logo__main {
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.service__logo__principal {
+    width: 346px;
+    height: 466px;
+    background: url('./img/Profissao01.png');
+}
+
+.service__logo__secundaria {
+    width: 151px;
+    height: 466px;
+    background: url('./img/Profissão02.png');
+}
+
+.service__logo__secundaria2 {
+    width: 151px;
+    height: 466px;
+    background: url('./img/Profissão03.png');
+}
+
+.service__logo__secundaria3 {
+    width: 151px;
+    height: 466px;
+    background: url('./img/Profissão04.png');
+}
+
+.rotated {
+    transform: rotate(270deg);
+    font-size: 40px;
+    margin-top: 190px;
+    margin-left: -155px;
+    width: 400px;
+}
+
+.service__profission {
+    font-size: 40px;
+    margin-left: 25px;
+    margin-top: 375px;
+}
+
+.section__newsletter {
+    background-color: #EF3DFF;
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+}
+
+.section__newsletter__main {
+    width: 40%;
+    height: 200px;
+}
+
+.section__newsletter__secondary {
+    width: 60%;
+    height: 200px;
+}
+
+.section__newsletter__main h2 {
+    font-size: 40px;
+    width: 372px;
+    margin-top: 35px;
+}
+
+.section__newsletter__main h3 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.section__newsletter__secondary {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section__newsletter__secondary .newsletter__email input {
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: 0;
+    color: white;
+    font-size: 18px;
+}
+
+.newsletter__email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.newsletter__email label {
+    float: left;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.newsletter__button button {
+    float: right;
+    margin-top: 20px;
+    margin-right: 75px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-style: none;
+    color: #EF3DFF;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.newsletter__button button:hover {
+    color: white;
+    background: #EF3DFF;
+    border: 1px solid white;
+}
+
+.section__contato {
+    width: 100%;
+    height: 500px;
+    background: url('./img/starfield-deep-space-many-light-years-far-from-earth\ 2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.section__contato__text {
+    width: 50%;
+    display: grid;
+    align-items: center;
+    height: 500px;
+    background-color: #64ff3d;
+}
+
+.section__contato__text h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.section__contato__text h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3D5BFF;
+}
+
+.section__contato__logo {
+    width: 50%;
+    height: 500px;
+    background-color: #F99B2F;
+}
+
+.contato__email {
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.contato__email .contato_email_input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato__mensagem {
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
 }

@@ -765,3 +765,22 @@ header {
 .endereco__footer {
     margin-top: 12px;
 }
+
+.lado-a {
+    width: 63px;
+    height: 329px;
+    left: -10px;
+    background: url('./img/Lado.png');
+    z-index: 1;
+    position: absolute;
+}
+
+.lado-b {
+    width: 63px;
+    height: 329px;
+    right: -8px;
+    top: 500px;
+    background: url('./img/Lado-b.png');
+    z-index: 1;
+    position: absolute;
+}

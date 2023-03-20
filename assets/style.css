@@ -8,11 +8,14 @@ body {
     background-color: #141414;
     color: rgb(255, 255, 255);
     font-family: 'Inter', sans-serif;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .section__container {
-    max-width: 1250px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -67,10 +70,59 @@ header {
 
 .main-section {
     height: 550px;
+    position: relative;
 }
 
 .main-section__container {
     flex-direction: column;
+}
+
+.circular__blue {
+    position: absolute;
+    width: 668px;
+    height: 668px;
+    left: -593px;
+    top: -174px;
+    z-index: -1;
+    background: #3D5BFF;
+    filter: blur(102.5px);
+}
+
+.circular__pink {
+    position: absolute;
+    z-index: -1;
+    position: absolute;
+    width: 668px;
+    height: 668px;
+    right: -400px;
+    top: -219px;
+    background: #EF3DFF;
+    filter: blur(102.5px);
+}
+
+.circular__pink__sobrenos {
+    position: absolute;
+    z-index: -1;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -40px;
+    left: 50px;
+    background: #EF3DFF;
+    filter: blur(102.5px);
+}
+
+.publication__blue {
+    position: absolute;
+    z-index: -1;
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 240px;
+    background: #3D5BFF;
+    filter: blur(102.5px);
 }
 
 .main-section__title {
@@ -113,6 +165,10 @@ header {
     background-color: #181818;
     color: #3D5BFF;
     cursor: pointer;
+}
+
+.marketing-section {
+    position: relative;
 }
 
 .marketing__section__container {
@@ -200,6 +256,7 @@ header {
     display: flex;
     flex-direction: row;
     margin-top: 8em;
+    position: relative;
 }
 
 .sobrenos__logo {
@@ -297,6 +354,11 @@ header {
     position: relative;
 }
 
+.publication__logo__client {
+    width: 100%;
+    margin-left: 20px;
+}
+
 .publication__logo {
     height: 900px;
     margin-top: 50px;
@@ -347,6 +409,10 @@ header {
     left: 949px;
     margin-top: 160px;
     background: url('./img/Publication-img05.png');
+}
+
+.service__section {
+    margin-top: 105px;
 }
 
 .service__main {
@@ -516,7 +582,6 @@ header {
 
 .section__contato {
     width: 100%;
-    height: 500px;
     background: url('./img/starfield-deep-space-many-light-years-far-from-earth\ 2.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -524,11 +589,10 @@ header {
 
 
 .section__contato__text {
-    width: 50%;
+    width: 70%;
     display: grid;
     align-items: center;
-    height: 500px;
-    background-color: #64ff3d;
+    margin-top: 160px;
 }
 
 .section__contato__text h2 {
@@ -540,30 +604,164 @@ header {
     font-size: 30px;
     font-weight: 700;
     color: #3D5BFF;
+    margin-top: 15px;
 }
 
-.section__contato__logo {
-    width: 50%;
-    height: 500px;
-    background-color: #F99B2F;
-}
 
 .contato__email {
-    height: 100px;
-    background-color: black;
     width: 100%;
     display: flex;
     gap: 30px;
+    margin-top: 105px;
 }
 
 .contato__email .contato_email_input {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
+
+.contato_email_input input {
+    width: 100%;
+    margin: 14px 0 14px;
+    outline: 0;
+    background-color: transparent;
+    border: none;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
 
 .contato__mensagem {
     width: 100%;
-    height: 100px;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato__mensagem label {
+    margin-top: 40px;
+
+}
+
+.contato__mensagem input {
+    width: 100%;
+    margin-top: 61px;
+    background-color: transparent;
+    border: none;
+    border: 0;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: 0;
+}
+
+
+.contato__mensagem button {
+    margin-top: 36px;
+    width: 30%;
+    font-weight: 400;
+    font-size: 16px;
+    height: 36px;
+    border-radius: 4px;
+    border: none;
+    background-color: #3D5BFF;
+    color: white;
+}
+
+
+.section__contato__logo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 215px;
+    margin-left: 115px;
+}
+
+.section__line__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.section__line {
+    width: 50%;
+    height: 1px;
+    background-color: white;
+    margin-top: 115px;
+    margin-bottom: 10px;
+}
+
+.section__footer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.section__flooter__logo {
+    width: 25%;
+}
+
+.social__media__footer {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.img__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 0 5px;
+    margin-top: 5px;
+}
+
+.home__footer {
+    width: 25%;
+    list-style: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home__footer li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.home__footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.home__footer a:hover {
+    text-decoration: none;
+    color: #EF3DFF;
+    cursor: pointer;
+}
+
+.contato__footer {
+    width: 25%;
+}
+
+.contato__footer span {
+    margin-top: 5px;
+}
+
+.endereco__footer {
+    margin-top: 12px;
 }

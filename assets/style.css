@@ -293,6 +293,32 @@ header {
     margin-top: 6em;
 }
 
+.client__section .section__container {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.client__info {
+    display: flex;
+}
+
+.arrows {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.arrows button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrows button:hover {
+    cursor: pointer;
+    filter: hue-rotate(330deg);
+}
+
 .client__text {
     width: 20%;
 }
@@ -308,13 +334,28 @@ header {
 
 .client__logo {
     display: flex;
-    flex-direction: row;
     gap: 1em;
     margin-left: 7em;
-    width: 210px;
+    width: 84%;
     height: 235px;
     margin-top: 6em;
+    overflow: visible;
 }
+
+.client__logo__content {
+    overflow: auto;
+    padding: 12px;
+    display: flex;
+    gap: 17px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.client__logo__content::-webkit-scrollbar {
+    display: none;
+}
+
 
 .publication__section {
     width: 100%;
@@ -582,7 +623,7 @@ header {
 
 .section__contato {
     width: 100%;
-    background: url('./img/starfield-deep-space-many-light-years-far-from-earth\ 2.png');
+    background: url('./img/starfield-deep-space-many-light-years-far-from-earth_2.png');
     background-size: 100%;
     background-repeat: no-repeat;
 }

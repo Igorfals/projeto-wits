@@ -28,9 +28,17 @@ header {
     top: 0;
     width: 100%;
     z-index: 15;
+    background-color: none;
+    transition: all 400ms ease-in-out;
+}
+
+.header-bg {
     background-color: #141414;
 }
 
+.header-transparent {
+    background-color: none;
+}
 
 .header__container {
     align-items: center;

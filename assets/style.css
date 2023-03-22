@@ -118,9 +118,10 @@ header {
     position: absolute;
     z-index: -1;
     position: absolute;
-    width: 668px;
-    height: 668px;
+    width: 26%;
+    height: 630px;
     right: -400px;
+    border-radius: 100%;
     top: -219px;
     background: #EF3DFF;
     filter: blur(102.5px);
@@ -129,11 +130,10 @@ header {
 .circular__pink__sobrenos {
     position: absolute;
     z-index: -1;
+    width: 90%;
     position: absolute;
-    width: 400px;
-    height: 400px;
-    top: -40px;
-    left: 50px;
+    height: 86%;
+    border-radius: 100%;
     background: #EF3DFF;
     filter: blur(102.5px);
 }
@@ -142,8 +142,8 @@ header {
     position: absolute;
     z-index: -1;
     position: absolute;
-    width: 330px;
-    height: 330px;
+    width: 430px;
+    height: 430px;
     left: 50%;
     transform: translateX(-50%);
     top: 285px;
@@ -304,16 +304,22 @@ header {
 
 .sobrenos__logo {
     width: 50%;
+    position: relative;
 }
 
 .sobrenos__logo img {
     background-color: #181818;
     padding: 85px 70px 104px 70px;
     border-radius: 0.8em;
+    width: 90%;
 }
 
 .sobrenos__info {
     width: 50%;
+}
+
+.sobrenos__info__sobrenos {
+    margin-left: 30px;
 }
 
 .sobrenos__info span {
@@ -453,6 +459,7 @@ header {
 
 .publication__logo__client {
     width: 100%;
+    margin-top: 150px;
 }
 
 #slide {
@@ -462,12 +469,10 @@ header {
     align-items: center;
     align-content: center;
     transition: all ease-out 0.3s;
-    margin-top: 50px;
     margin-bottom: 50px;
 }
 
 #slide img {
-    margin-top: 100px;
     width: 19%;
     transition: all 0.5s ease-in-out;
 }
@@ -556,11 +561,14 @@ header {
 
 .service__section {
     margin-top: 105px;
+    width: 100%;
 }
 
 .service__main {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    margin-top: 75px
 }
 
 .service__text {
@@ -615,6 +623,11 @@ header {
     gap: 1em;
     justify-content: flex-end;
 }
+
+.service__logo__main span {
+    transition: all ease-in-out 0.8s;
+}
+
 
 .service__logo__main>div {
     display: flex;
@@ -885,7 +898,6 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 215px;
-    margin-left: 115px;
 }
 
 .section__line__container {
@@ -978,6 +990,7 @@ header {
     background: url('./img/Lado.png');
     z-index: 1;
     position: absolute;
+    margin-top: 115px;
 }
 
 .lado-b {
@@ -1146,10 +1159,8 @@ header {
     }
 
     .circular__pink__sobrenos {
-        width: 230px;
-        height: 230px;
-        top: 41px;
-        left: 74px;
+        width: 100%;
+        height: 92%;
     }
 
     .sobrenos__info {
@@ -1188,6 +1199,10 @@ header {
 
     .publication__logo__client img {
         width: 100%;
+    }
+
+    .publication__logo__client {
+        margin-top: 50px;
     }
 
     .publication__text {
@@ -1352,4 +1367,47 @@ header {
         margin-top: 10px;
     }
 
+}
+
+@media (min-width: 901px) and (max-width: 1450px) {
+    .circular__pink {
+        width: 500px;
+        height: 500px;
+        right: -362px;
+        top: -219px;
+    }
+
+    .publication__logo__client {}
+
+    .lado-b {
+        height: 274px;
+        top: 505px;
+    }
+
+    .lado-a {
+        height: 272px;
+        margin-top: 193px;
+    }
+
+    .service__main {
+        margin-top: 36px;
+    }
+
+    .section__newsletter {
+        margin-top: 126px
+    }
+
+
+    .section__contato__text {
+        width: 65%;
+    }
+
+    .section__contato__logo {
+        width: 35%;
+    }
+
+    .section__contato__logo img {
+        margin-left: 20px;
+        width: 80%;
+    }
 }

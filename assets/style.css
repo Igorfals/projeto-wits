@@ -46,11 +46,24 @@ header {
 
 .header__container {
     align-items: center;
+    height: 100%;
 }
 
 .logo {
     width: 30%;
 }
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+.header-nav-social-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 
 .header-nav {
     width: 60%;
@@ -68,13 +81,14 @@ header {
 }
 
 
-.header-nav li {
-    display: inline-block;
-    margin: 20PX;
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
 .social-media {
-    width: 400px;
+
     display: flex;
     justify-content: flex-end;
     gap: 6px;
@@ -892,7 +906,68 @@ header {
 
 @media screen and (max-width: 1100px) {
     header {
+        padding: 0;
+
+    }
+
+    .header__container {
+        gap: 25px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        display: flex;
+        /* justify-content: center; */
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-toggle {
+        width: 28px;
+        background-color: transparent;
+        border: none;
+        display: block;
+    }
+
+    .mobile-menu-toggle svg {
+        fill: white;
+    }
+
+
+    .header-nav-social-container {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: calc(100% - 6px);
+        transition: all 400ms ease-in-out;
+
+    }
+
+    .header-nav-social-container.visible {
+        display: block;
+    }
+
+    .header-nav {
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .header-nav ul {
+        display: flex;
+        gap: 12px;
+    }
+
+    .header-nav li {
+        margin: 0;
+    }
+
+    .social-media {
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
     }
 
     .section__container {

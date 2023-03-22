@@ -9,6 +9,7 @@ divs.forEach(element => {
                     alterarItem.classList.remove('service__profission')
                 }
                 alterarItem.classList.add('rotated')
+                alterarItem.classList.remove('not-rotated')
                 divoriginal.style.width = '20%'
             }
         });
@@ -16,6 +17,7 @@ divs.forEach(element => {
         if (alterar !== null) {
             if (alterar.classList.contains('rotated')) {
                 alterar.classList.remove('rotated')
+                alterar.classList.add('not-rotated')
             }
             alterar.classList.add('service__profission')
             element.style.width = '40%'

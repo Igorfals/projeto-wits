@@ -613,8 +613,16 @@ header {
     width: 65%;
     flex-direction: row;
     gap: 1em;
+    justify-content: flex-end;
 }
 
+.service__logo__main>div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 12px;
+
+}
 
 .service__logo__principal {
     width: 40%;
@@ -622,7 +630,7 @@ header {
     background: linear-gradient(359.09deg, #000E5C 0.74%, rgba(0, 14, 92, 0.536422) 55.82%, rgba(0, 14, 92, 0) 99.22%), url('./img/Profissao01.png');
     border-radius: 14px;
     background-size: cover;
-    transition: width 0.5s;
+    transition: width 0.2s;
 }
 
 .service__logo__principal:hover {
@@ -637,7 +645,7 @@ header {
     border-radius: 14px;
     background-size: cover;
     background-position: 44%;
-    transition: width 0.5s;
+    transition: width 0.2s;
 }
 
 .service__logo__secundaria:hover {
@@ -652,7 +660,7 @@ header {
     border-radius: 14px;
     background-size: cover;
     background-position: 44%;
-    transition: width 0.5s;
+    transition: width 0.2s;
 }
 
 .service__logo__secundaria2:hover {
@@ -667,7 +675,7 @@ header {
     border-radius: 14px;
     background-size: cover;
     background-position: 10%;
-    transition: width 0.5s;
+    transition: width 0.2s;
 }
 
 .service__logo__secundaria3:hover {
@@ -676,18 +684,25 @@ header {
 }
 
 .rotated {
-    transform: rotate(270deg);
+    transform: translate(51px, -8px) rotate(-90deg);
     font-size: 40px;
-    margin-top: 190px;
-    margin-left: -155px;
-    width: 400px;
+    /* margin-top: 190px; */
+    /* margin-left: -155px; */
+    /* width: 400px; */
     transition: ease-in-out 800ms;
+    transform-origin: 0 bottom;
+    white-space: nowrap;
+}
+
+.not-rotated {
+    transform: translate(0, -8px) rotate(0);
+    transition: ease-in-out 2000ms;
+    transform-origin: 0 bottom;
+    white-space: initial;
 }
 
 .service__profission {
     font-size: 40px;
-    margin-left: 25px;
-    margin-top: 375px;
     transition: ease-in-out 800ms;
 }
 
@@ -761,8 +776,7 @@ header {
 
 .newsletter__button button:hover {
     color: white;
-    background: #EF3DFF;
-    border: 1px solid white;
+    background: #141414;
 }
 
 .section__contato {
@@ -1339,9 +1353,3 @@ header {
     }
 
 }
-
-/* border: 1px solid rgb(235, 235, 235); */
-/* transition-property: transform; */
-/* transition-duration: 250ms; */
-/* transition-timing-function: ease; */
-/* padding: 1rem;

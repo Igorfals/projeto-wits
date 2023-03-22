@@ -142,13 +142,13 @@ header {
     position: absolute;
     z-index: -1;
     position: absolute;
-    width: 550px;
-    height: 550px;
+    width: 330px;
+    height: 330px;
     left: 50%;
     transform: translateX(-50%);
-    top: 240px;
+    top: 285px;
     background: #3D5BFF;
-    filter: blur(102.5px);
+    filter: blur(102.5px)
 }
 
 .main-section__title {
@@ -185,6 +185,17 @@ header {
     background-color: #3D5BFF;
     color: white;
     cursor: pointer;
+}
+
+.main-section__buttons .button_primary:hover {
+    background-color: #EF3DFF;
+    border: 1px solid white;
+}
+
+.main-section__buttons .button_second:hover {
+    color: white;
+    background-color: #EF3DFF;
+    border: 1px solid white;
 }
 
 .main-section__buttons .button_second {
@@ -438,10 +449,58 @@ header {
     position: relative;
 }
 
+
+
 .publication__logo__client {
     width: 100%;
-    margin-left: 20px;
 }
+
+#slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: all ease-out 0.3s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#slide img {
+    margin-top: 100px;
+    width: 19%;
+    transition: all 0.5s ease-in-out;
+}
+
+#slide .active {
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+#slide .active2 {
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+#slide .active:hover {
+    transform: scale(1.3);
+}
+
+#slide .item:hover {
+    transform: scale(1.3);
+    z-index: 5;
+}
+
+#slide .p-item:hover {
+    transform: scale(1.3);
+    z-index: 5;
+}
+
+#slide .item {
+    z-index: 1;
+    transform: scale(1.1);
+}
+
 
 .publication__logo {
     height: 900px;
@@ -506,6 +565,7 @@ header {
 
 .service__text {
     width: 35%;
+    margin-right: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -542,12 +602,19 @@ header {
     cursor: pointer;
 }
 
+.service__btn button:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: #EF3DFF;
+}
+
 .service__logo__main {
     display: flex;
     width: 65%;
     flex-direction: row;
     gap: 1em;
 }
+
 
 .service__logo__principal {
     width: 40%;
@@ -792,6 +859,11 @@ header {
     color: white;
 }
 
+.contato__mensagem button:hover {
+    background-color: #EF3DFF;
+    color: white;
+    border: 1px solid white;
+}
 
 .section__contato__logo {
     width: 40%;
@@ -1098,6 +1170,7 @@ header {
     .publication__section {
         margin-top: 25px;
     }
+
 
     .publication__logo__client img {
         width: 100%;

@@ -272,16 +272,18 @@
                     <div class="section__newsletter__main">
                         <h2>Quer receber
                             nossas atualizações?</h2>
-                        <h3>Participe da nossa newsletter.</h3>
+                        <h3 class="message">Participe da nossa newsletter.</h3>
                     </div>
                     <div class="section__newsletter__secondary">
-                        <div class="newsletter__email">
-                            <label for="email-newsletter">Seu melhor email: </label>
-                            <input type="email" id="email-newsletter">
-                            <div class="newsletter__button">
-                                <button>Assinar</button>
+                        <form id="form-newsletter">
+                            <div class="newsletter__email">
+                                <label for="email-newsletter">Seu melhor email: </label>
+                                <input type="email" name="email-newsletter" id="email-newsletter">
+                                <div class="newsletter__button">
+                                    <button type="submit" class="assinando">Assinar</button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -290,26 +292,30 @@
                     <div class="section__contato__text">
                         <div class="section__contato__title">
                             <h2>Está com alguma dúvida?</h2>
-                            <h3>Entre em contato conosco</h3>
+                            <h3 class="default-text">Entre em contato conosco</h3>
                         </div>
                         <div class="contato__email">
-                            <div class="contato_email_input">
-                                <label for="name-contato">Nome Completo:</label>
-                                <input type="text" id="name-contato">
-                                <label for="email-contato">E-mail:</label>
-                                <input type="email" id="email-contato">
-                            </div>
-                            <div class="contato_email_input">
-                                <label for="contato">Contato:</label>
-                                <input type="text" id="contato">
-                                <label for="telefone-contato">Telefone:</label>
-                                <input type="text" id="telefone-contato">
-                            </div>
-                        </div>
-                        <div class="contato__mensagem">
-                            <label for="mensagem">Mensagem:</label>
-                            <input type="text" id="mensagem">
-                            <button>Enviar Mensagem</button>
+                            <form id="form-contato">
+                                <div class="contato_email_input">
+                                    <label for="name-contato">Nome Completo:</label>
+                                    <input type="text" id="name-contato" name="text" required>
+                                    <label for="email-contato">E-mail:</label>
+                                    <input type="email" id="email-contato" name="email" required>
+                                </div>
+                                <div class="contato_email_input">
+                                    <label for="contato">Contato:</label>
+                                    <input type="text" id="contato" name='text' required>
+                                    <label for="telefone-contato">Telefone:</label>
+                                    <input type="text" id="telefone-contato" name='telefone-contato' required>
+                                </div>
+                                <div class="contato__mensagem">
+                                    <label for="mensagem">Mensagem:</label>
+                                    <!-- <input type="text" name='mensagem' id="mensagem"> -->
+                                    <textarea name="mensagem" id="mensagem"></textarea>
+                                    <button type="submit" for="enviarmsg" class="enviar-mensagem" data-button>Enviar
+                                        Mensagem</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div class="section__contato__logo">
@@ -365,9 +371,12 @@
             </footer>
         </div>
     </div>
+    <div id="meuToast-success"></div>
+    <div id="meuToast-error"></div>
 </body>
 <script src="./assets/slide.js"></script>
 <script src="./assets/navbar.js"></script>
 <script src="./assets/profission.js"></script>
+<script src="./assets/app.js"></script>
 
 </html>

@@ -836,6 +836,13 @@ form {
     margin-top: 105px;
 }
 
+.contato__input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
 .contato__email .contato_email_input {
     width: 100%;
     display: flex;
@@ -1383,6 +1390,10 @@ input:-webkit-autofill:active {
     .contato__email {
         flex-direction: column;
         margin-top: 80px;
+    }
+
+    .contato__input {
+        flex-direction: column;
     }
 
     .section__contato__logo {
